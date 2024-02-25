@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR CODE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="sceript.js"></script>
+    <div id="container">
+        <h1 class="main"><Q>QR CODE</Q></h1>
+        <input id="input" type="text" placeholder="Type or URL"><button onclick="call()"type="submit" id="button">Generate</button></input>
+        <div id="pic">
+        <img src=""alt="QR" id="img">
+    </div>
+    </div>
+    <script>
+        var pic=document.getElementById("pic")
+var input=document.getElementById("input")
+var img=document.getElementById("img")
+ function call(){
+    img.src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data="+ input.value;
+ }
+    </script>
+    <a href="x.html">going</a>
+</body>
+</html>
